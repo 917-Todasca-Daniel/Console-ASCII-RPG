@@ -1,0 +1,109 @@
+7:53 PM 9/26/2020!entrance
+You reach the modest Felinekin residence of Mohtan. After you humiliatingly crouch in front of the fully-armored city guards to enter the low gate designed for Felines, you are welcomed by its curious sights.
+At this part of daytime, dozens of Felines are curled-up in the middle of the stone-paved streets, seemingly sleeping, but occasionally peeking an eye to analyze your rare human figure, making them wiggle their tail and jerk their whiskers as you roll more of your scarf over your face.
+The buildings seem to be made from a single type of dark wood, carved in intricate shapes. Entire walls pictured trees, animals, or even elaborate scenes. Only a couple of the tallest towers were painted in bright shades of red and green. You also notice how tall these buildings are and how some Feline children would playfully climb to their tops in great leaps, before you could even blink, then jump from a roof to another, or enter an opened window just to re-emerge later. Do they even have stairs around here? 
+The road only leads east and there's no point in leaving the residence just yet.
+!entrancecontrol
+~go east$
+Before you go, you should check where you have to go with the help of the contract in your inventory (press I).
+/
+/
+/
+!entrance2
+~leave the city$go east$
+You are once again at the entrance of Mohtan. Some of the cats you first saw woke up - you remember them by their fur. Now, they are lazily washing themselves with their tongues, and even playfully wiggling on the ground. What doesn't seem to have changed, however, is the amount of curious and suspicious glances you receive.
+/
+/
+!leavefailure
+It is true that all you want right now is to leave the city and be on the road once again, alone with your thoughts, away from stranger sights - but you haven't found your contract checkpoint yet, so you turn back from the city gate and face Mohtan once more.
+/
+/
+/
+/
+/
+/
+/
+/
+!sculpture
+The road suddenly stops at a large cluster of building, and bifurcates to north and south.
+Where you currently stand, you see a stone sculpture of a Feline in armor, kneeling and holding his helmet up high. At its feet, there are many little stone Feline children. The way the sun was currently set, a grave shadow covered half of the face of the Feline, but its loud reflective smile was like a shiny star in a most dark night. Even the details of the little cubs' fur are carefully carved, making the statue truly look alive, as if it was ready to wake up from its long slumber and grab your hand.
+At the base of that sculpture, is a platter with some drops of milk on it, and a plaque where you can read: "For the bravery of the Feline warrior, and for those fallen - we remember our troubled past, and hope for a brighter future".
+!statuechoice
+~what a bunch of dramatic rubbish!$a beautiful gesture$
+What do you think about this?
+/
+!statuechoice1
+You spit at the statue. Sentimental words don't bring back the dead and no one can retrieve what they have lost - you know that very well. The wars the past generations had to suffer brought the very worst out of every race of this world and it's shameless to try to get good things out of it. All the people that died are forever gone - and so are the ones you kill in your contracts... Although, you can't help but feel soulfully touched by the image of the sculpture, by the cheerful smile of an immortalized dying warrior.
+/
+!statuechoice2
+Terrible times were the centuries this world lived in for the past hundreds of years. When all races are involved in a war, the worst of each of them is brought up, and not soon will the global tension disappear. You can't help but feel soulfully touched by the cheerful smile of an immortalized dying warrior, although, you know best that what's been lost will never come back and the carving of a stone doesn't make up for the flesh that has been torn apart. 
+!statuechoicereset
+What follows on the plaque is also a list of names, in a much more disorganized font, supposedly for the dead warriors of this residence.
+!statuecontrol
+~read the list of names$go north$go south$go back west
+What do you do now?
+/
+!namelist
+Alexander. Amadeus. Bowie. Bob. Cat. Cinnamon. Chewy. Floyd. Goliath. Kitty. Kitty Cat. Meowzilla. Prince. Peanut. Puss. Puddingface. Sushi. Tom. Tomm. Thom. Tomson. Tomcub. Thomas. Thomason. Tim. Wolf. Zoomie. 
+/
+/
+/
+!sculpture2
+~go north$go south$go west, to the entrance
+You are once again at the point where the road bifurcates to north and south. It is a big surprise when you see that the sculpture of the armored Feline is actually a fountain; milk is now raining from its helmet, all the way to the platter at the base. Some Feline even take small sips, while maintaining awareness of your presence - you could not escape their gaze, no matter what you did.
+/
+/
+/
+!parkour1
+You keep walking. The buildings keep getting taller, casting an almost permanent shadow on the ground.
+Snaking through the town are the trees you couldn't notice before, but now realize they spread for miles, from north to south, making the city much larger than it first seemed. If you focus well enough, you can see that the trunks have violent and haywired scratch marks at the surface.
+Right as you take a better look at a tree, you hear a rustle through the leaves that immediately engages your fighting instincts. Blaming yourself for not being aware that you were followed, your muscle tense, your eyes widen, ready to pop out of your skull, and you strongly clench the dagger in your fist. You must take control of this situation, and an ambush from high ground means you must gather...
+You can't finish your thoughts before a playful little magpie Feline jumps from that tree and rolls over the ground, laughing like there's no tomorrow. His happy, round and furry cheeks jump up and down. A little more agitation of the leaves follows before you finally hear the same kind of heartfelt laughter from two more Feline children - one stripped in golden colours, another one in ginger colours and white spots. They leap from the trees with amazing mobility, and restrain the hands of the first Feline that's sitting defeated on the ground, who tries to seem surprised and sad about his fictive capture, yet can't contain the pure sparks of joy in his dark and large eyes. All three of them wore the same kind of white shirt and baggy tapered shorts.
+They're the same children you saw the moment you've entered the town, atop the roofs - now, they're in front of you, tired from their childlike indulgence. 
+Innocence... when was the last time you felt like them?
+Unclenching your fist comes with a great feeling of confort and dissipation of the inner heat and pressure that was building throughout your whole body.
+!parkour1choice
+~run away$try to look friendly$
+The children soon take notice and gaze down at you. What do you do?
+%
+
+3/10
+You keep walking on the road, which now only leads east, or back south.
+A younger, female Feline is sitting down and talks to what seems to be her father, their backs on the wall and the same gray colours on their stripped fur. The father carefully listens to all that she has to say. He has and axe in hand, and small chunks of wood through his fur. They haven't noticed you in the slightest.
+What also gets your attention is the elaborate scene that seems to be carved on the wall behind them.
+[stay and overhear their conversation] -> Your mother told you to leave strangers to their business, but overhearing a conversation would be the least worst moral choice you've done this week.
+"I know you used to sit with us guards and watch me on duty all day when you were a child. But, little girl, everyone wishes we'll never need guards like we used to do before, myself included."
+"Of course, no one wants war again, but we're going to need more guards in the future, don't we? People have started doing crimes within their community and we need guards and all that? Don't you think 'City Guard Clawdia' has a nice ring to my name? I'd really kick kins' tails!"
+"Yes. But if we do, those poor guards that were laid off without job will be requested first, not you, no matter how talented you might be. You know how noisy those old fellas are. Although personally I wouldn't want to give up my new lumberjack job, and neither does your mother!"
+At that moment, it seemed like the father wanted to wink, except Felines are physically unable to do that. Instead, he blinked two times at her, playfully, as the daughter started to wave her tail in what seemed like frustration.
+"But anyway, the city guard - it's a boring job to have right now, do you even see the sad faces of Puss and Boots at the city gates? They don't do anything all day other than sitting upright, they don't give a single damn about who even enters!"
+"So that's why you think it will be better if I become a hunter..."
+"Yes, girl. You'd be an amazing one. I know you want to be a guard because you have a noble image of them, but you can be noble in your life without that job. Who you are is anything but what your work title is."
+You are slightly amused by the typical high-pitched accent every Feline in this serious discussion, as well as by what the father says - you wouldn't get many good looks if you told somebody you're a mercenary. Good thing you can't!
+With a deep sigh, the female Feline pets her own ears with her paw, and frowns while twitching her whiskers.
+What follows next between the two Felines is just small talk and a debate about their cheese preferences - some of their strangest descriptions that included mice made you feel ready to throw up. They leave soon after.
+[approach and look at the wall] -> OPTIONAL: You approach and look at the wall, but that's when the father and daughter notice you, so they stop talking, and instead try to politely not look too much at you.
+On the wall, you see a surprisingly accurate map of the world. Felinekin territories are proudly marked by the symbol of a Feline paw.
+[go east]
+[go back south]
+IF COMING AGAIN:
+You are back in front of the building with the elaborate wall. The road goes both east and south.
+What do you do now?
+[look at the wall]
+[go east]
+[go south]
+
+4/10
+
+
+DUMP:
+- interaction with the parkour children
+- rumours about the ghost
+- stigma about hybrids
+- about 'racism'
+- the cat sculptor and the cats sharpening their claws on the walls
+
+        T      
+  XXX  
+XX       
+  XXXXX

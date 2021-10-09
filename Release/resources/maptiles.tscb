@@ -1,0 +1,43 @@
+0 0
+square
+ ___                                                                
+|   |                                                               
+|___|
+#
+startsquare_left
++___                                                          
+|   |                                                               
+|___|                                                        
++
+#  
+unknown_up  
+                                                                 
+:::::                                                              
+|___|
+#
+unknown_down                                              
+
+|   |
+:::::
+#
+unknown_right
+ _
+  ::
+ _::
+#
+unknown_left
+   _                                                                
+ ::                                                                
+ ::_
+#
+misc
+ )))                                                                
+/ o \                                                               
+|___|
+#
+#                                
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+                                                                    

@@ -1,0 +1,22 @@
+Started reading script file: demo.
+Empty line ~50, was that the intention?
+Empty line ~112, was that the intention?
+Empty line ~116, was that the intention?
+Empty line ~137, was that the intention?
+Finished reading script file: demo.
+
+Started reading: demo_links.
+Error on line 5, file demo_links: invalid paragraph ID: breakmirror.
+Error on line 6, file demo_links: invalid paragraph ID: joke_mirror.
+Error met on line ~16, file demo_links: invalid paragraph ID: servant_nothing.
+Bad reference for paragraph with name: mirrorchoice2 (cannot be referenced).
+Error met on line ~168, file demo_links: invalid paragraph ID: fixmirror.
+Error met on line ~171, file demo_links: invalid paragraph ID: fixmirror.
+Error met on line ~172, file demo_links: invalid paragraph ID: fixmirror.
+Error met on line ~173, file demo_links: invalid paragraph ID: fixmirror.
+Error met on line ~187, file demo_links: invalid paragraph ID: mirrorchoise2.
+Error met on line ~188, file demo_links: invalid paragraph ID: mirrorchoise2.
+Error met on line ~189, file demo_links: invalid paragraph ID: mirrorchoise2.
+Bad reference for paragraph with name: enter (cannot be referenced).
+Link file read: demo_links.
+
