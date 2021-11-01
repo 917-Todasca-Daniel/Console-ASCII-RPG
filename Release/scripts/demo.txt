@@ -2,11 +2,18 @@
 ?scroll
 ?maphide
 [0 0
-You are a nefarious mercenary rogue. Much about you and your backstory is unknown, which is extremly convenient because I can't spend too much writing this demo RPG since I'm supposed to learn programming, instead of spending hours creating dialogue - something that I still unfortunately did. 
-Anyway, you are a nefarious mercenary rogue. The only thing that anyone really knows about you is that, for good enough coin, you do your job fast. Of course, those most close to you know another special thing about you - that there's nothing more to know about you. You pride yourself in the bloody work you do. Unpleasant at worst, but extremely rewarding at best. You haven't assassinated any powerful and influential king yet, even though you tell that you each of your client, but it's at the top of your bucket list and you had your fair share of seemingly impossible jobs. Part of your success is your habitual lack of emotion, but another part of your success is the magical dagger you wield, enchanted with shadow powers. Not only can it do cool party tricks, it also gives you a strong edge over your competition.
-If you'd ever have a genuine conversation with someone, you could brag hours about all the amazing sceneries of the places you've traveled to. Of course, you don't really have friends to talk to, so that's out of the question. But it seems that the contract you took right now will be one such experience, since you find yourself in a location a romantic poet could only dream of: a ruined old castle. Your objective is as simple as it can be - recover a magical artifact inside the castle with some boring description. You'll know it when you'll see it.
-You're glad you've brought the guitar you've stolen a long time ago with you in this mission, because you had to travel some extremely long roads inside forests no one dares to enter, except for the usual bandit. Only after many uncounted hours, you finally reach the hidden castle in a valley you never knew existed. You easilly climb the castle's ruinous walls and soon find yourself in front of its sky-high wooden door. It's already open, as if it was waiting for you. Consumed by the ages as it was, you still notice the intricate shapes and carvings on the rotten wood. Creaking with terrible cries in the wind, it makes you think of how the past takes away all that is good, but always leaves a little something to remind you about it in the present. It always leaves a little sadness and regret.
-Whatever, so much for the romantic poet; there's no use pondering these thoughts. You have a job to do, and some money to get back to. You don't know what awaits you in this new quest - but that's just another perk of your job. Are you actually ready for anything that could happen? A questions that always begs an answer...
+Welcome to a gameplay demo showcasing my personal game engine based on ASCII graphics!
+!begin2
+This is nothing but a small passion project made in roughly two years during my free time. It was one of my biggest dreams to code a game by myself ever since I've decided to learn programming and went to highschool, while ASCII graphics and games are just something that caught my interest and fascination from other things I've seen on the internet. I've combined these two things into a personal goal the moment I decided to learn C++ OOP by making something cool that would keep me motivated. Before that, I've experienced coding games with C++ by tinkering with Unreal Engine's beautiful systems - a really fun learning experience that I've referenced in my current implementations (obviously, not regarding the graphics!).
+The main challenges I had to face for this project were understanding C++ as well as managing my time. I only had vague ideas of what I wanted to do even from the beginning, and I didn't know how much to expect from myself and the time I had available - mostly school holidays. I faced many technical challenges and I had to re-write many pieces of code, but I think my implementations are really easy to manage and actually accomplish the things I've wanted to see the most!
+What can you expect to see in the next thirty minutes? Something I've patched up together in a couple of days with the engine's features - an extremely dumb and basic story that imitates the RPG experience of older text-based games, yet in a modern fashion. Besides reading text in this box and choosing to do some actions, you'll also take part in turn-based grid encounters with your characters against scripted enemies, which is the part that really took the most to implement and will properly showcase the capabilities of the engine! 
+For the sounds you hear in this demo, I've used FMOD - a wonderful audio library made for games. But everything else you see in the screen? They're only a couple of text files with certain formatting rules and made-up extensions which you can open in the resource folder of this project with any kind of text editor to see how simple they look. Obviously, don't edit them unless you realize what's going on because you might break the game.
+Sit back, relax and enjoy this old-school (ish) experience!
+?scroll
+You are a nefarious mercenary rogue. The only thing that anyone really knows about you is that, for good enough coin, you do your job fast. Those most close to you know one more special thing, that you don't let anyone know more about you than it is necessary. It's what gives you that extra edge over your competition; besides the special dagger you use, enchanted with shadow powers by a talented mage.
+Your contracts always bring you in the weirdest of all places. If you'd ever have a genuine conversation with someone, you could brag hours about all the places you've traveled to. This time, your contract brings you to a location a romantic poet could only dream of: a ruined old castle. Your objective is as simple as it can be - recover a magical artifact with some boring description. You'll know it when you'll see it.
+You travel singing the guitar the roads inside forests no one dares to enter, except for the usual bandit, before you finally reach the hidden castle in a valley you never knew existed. You easilly climb this castle's ruinous walls and soon find yourself in front of its sky-high wooden door. It's already open, as if it was waiting for you. Consumed by the ages as it was, you still notice the intricate shapes and carvings on the rotten wood. Creaking with terrible cries in the wind, it makes you think of how the past takes away all that is good, but always leaves a little something to remind you about it in the present. It always leaves a little sadness and regret.
+Whatever, so much for the romantic poet; there's no use pondering these thoughts. This is only a game demo, not a full-blown RPG experience. You've never backed down in your mercenary life, but are you ready to enter this castle and face danger once again? A question that always begs an answer... 
 ...
 !ask1
 ~yes!$no$
@@ -23,7 +30,7 @@ That's alright. Still waiting.
 Excellent. Let's go, then!
 !enter
 ?mapshow
-You enter the castle and find yourself in a long hall of cold stone walls, almost as tall as the whole castle looked from the outside. Its many visible riches visibile with the slight moonlight from outside don't surprise you in the slightest - a large silver mirror, golden chandeliers, dazzling gems hanging from the ceiling, ivory sculptures that haven't been cleaned in ages, paintings as large as a commoner's house with colours that have started to fade. They're probably not looted only because fools still believe the myth of being haunted by Royal Ghosts. What actually surprises you about this cold and desolate entrance hall, however, is the overwhelming silence that envelops you and your mind.
+You enter the castle and find yourself in a long hall of cold stone walls, almost as tall as the whole castle looked from the outside. Its many visible riches visibile with the slight moonlight from outside don't surprise you in the slightest - a large silver mirror, golden chandeliers, dazzling gems hanging from the ceiling, ivory sculptures that haven't been cleaned in ages, paintings as large as a commoner's house with colours that have started to fade. They're not looted only because fools still believe the myth of being haunted by royal ghosts. What actually surprises you about this cold and desolate entrance hall, however, is the overwhelming silence that envelops you and your mind.
 !enterchoice1
 ~inspect mirror$inspect paintings$go east$leave the castle$
 But there's no time for self-reflection - the road leads right ahead. The sooner you get out, the sooner you get your money. You know what to do.
@@ -37,7 +44,7 @@ A mirror stands proudly on the wall. It's covered in dust, but it still looks li
 Underneath the thick layer of dust you've just cleaned, you can see yourself better than you ever did before. Covered in your old red scarf, there's never much for the eye, but you still take a second to analyze your face from many different angles, with the full moon carressing your every shape, until you finally convince yourself you're as charming as always.
 !mirrorchoice1
 ?xyzmirror
-You choose not to indulge in your narcissistic curiosity and focus on the more important things. Moving on...
+You choose not to indulge in your curiosity and focus on the more important things. Moving on...
 !mirror2
 The mirror sits proudly on the wall. How many have passed around this mirror before in a rush to pass this hall, only sparing their cheapest glance for its silver reflection? 
 /
@@ -45,8 +52,10 @@ The mirror sits proudly on the wall. How many have passed around this mirror bef
 ~yes$no - i never back down!$
 Are you sure you want to leave the castle and cancel your contract?
 !leaveyes1
-You decide to leave the castle, canceling your contract. Days later, your contractor threaned to kill your family for it, but since you have no family, nothing actually happened - good riddance! You continue your mercenary life as if nothing happened. But are you really happy with this kind of boring outcome?
+You decide to leave the castle, canceling your contract. Days later, your contractor threaned to kill your family, but since you have no family, nothing actually happened - good riddance! You continue your mercenary life as if nothing happened. But are you really happy with this kind of boring outcome? Your choice.
+Obtained 'The Runaway' ending!
 ?gameover
+?runaway
 
 !leaveno1
 Dagger in your hand, you turn back, ready to face whatever this castle has to throw at you once again.
@@ -58,28 +67,28 @@ You currently are at the entrance of the castle, in the large luxury hall, which
 /
 !room2
 [1 0
-You walk the hall in great hurry, but careful enough as to not set any traps. You're used to expecting those, especially in an abandoned castle, and you soon get accustomed to the musty smell of the castle that gets heavier and heavier. It got almost pitch dark by the time your crossed the hall, and as much as your eyes are adapted to darkness, you still struggled to see the half-opened door that's right in front of you. You enter the next room, and then close the creaking door behind you.
+You walk the hall in great hurry, but careful enough as to not set any traps. You're used to expecting those, especially in an abandoned castle, and you soon get accustomed to the musty smell of the castle that gets heavier and heavier. It got almost pitch dark by the time your crossed the hall, and as much as your eyes are adapted to darkness, you light up the torch you've prepared before, revealing in front of you another half-opened door. You enter the room, but also decide to close the creaking door behind you, as to make sure no one is following you.
 !opinion1
-~probably what was coming for them; they seem like rich and greedy fools$no way to truly know; better focus on right now$i guess nothing lasts forever, not even a rich Royal Family$
-You sink your foot in a red silky carpet that welcomes you and bids you to never leave. You seem to be inside a wide dining hall, featuring a table that could easily fit thirty people. Cabinets cover the walls all around you - some empty, others portraying luxury platters, cups, and many kinds of pottery, all shining with only the little moonlight that's coming from outside. You curiously notice a tall sillhouete standing in a corner, but you soon realize it's only a grandfather clock that breaks the enveloping veil of silence from time to time with its perpetual ticks. A flight of stairs is leading somewhere up above. You also notice another more subtle stairway, but this time leading somewhere down. There may be some dirty spots here and there, and the same thick layer of dust everywhere in the room, from the ground up to your nostrils, but it's clear this was once a place abundant in riches, treasures, and people. What could have happened to everyone?
+~probably what was coming for them; they seem like greedy fools$no way to truly know; better focus on right now$they met their tragic ends, like we all do$
+You sink your foot in a red silky carpet that welcomes you and bids you to never leave. You seem to be inside a wide dining hall, featuring a table that could easily fit thirty people. Cabinets cover the walls all around you - some empty, others portraying luxury platters, cups, and many kinds of pottery. A flight of stairs is leading somewhere up above while being guarded by the tall armor of a knight, watching over all of fhe room from its corner. You also notice another more subtle stairway, but this time leading somewhere down. There may be some dirty spots here and there, and the same thick layer of dust everywhere in the room, from the ground up to your nostrils, but it's clear this was once a place abundant in riches, treasures, and people. What could have happened to everyone?
 /
 !option1
-Judging by the abundance of expensive treasures around here, you decide that the people of this castle must have been greedy and corrupt, leading them to their downfall. You also imagine how the kings and queens here probably turned a blind eye to the poor. No matter how much you fortify the walls of your castle, once greed finds its way inside, you should prepare for its fall.
+You decide that the people of this castle must have been greedy and corrupt, leading them to their downfall. No matter how well guarded or fortified a castle is, greed still finds its way inside, and every greedy kingdom eventually falls.
 /
 !option2
-You decide it is not your place to judge the dead of a place you never knew yourself. Imagining stories about the past is nothing but daydreaming, and after all, that doesn't even matter right now. Moving on.
+You decide it is not your place to judge the dead of a place you never knew yourself. It could be that the people of this castle were greedy, it could be that they lost wars in their own cowardice, or it could just be that a terrible sickness tore them down. Imagining the past is nothing but daydreaming. Moving on.
 /
 !option3
-You know best how fragile human life easy. Nobody is immortal; moreover, nothing lasts forever. Things get replaced, or just get lost in time; and wherever you are now feels more like being lost in time. Who even cares how that happened? Moving on. 
+You decide that it's always best to just accept what happened, as we must all accept our end. Things get replaced, or just get lost in time; and wherever you are now feels more like being lost in time. 
 /
 !room2sec
-~inspect clock$go west$go north upstairs$go south downstairs$
+~inspect knight armor$go west$go north upstairs$go south downstairs$
 ?dining
 [1 0
 You are inside the dining room of the castle. A part of you is amused at the idea of possibly attending a royal banquet here, but you're not a person of anything that's royal.
 /
 !armor
-The grandfather clock is as elaborately crafted as everything else in the castle. It first seems that it is covered in robes, but that is only the shape of the finely carved wood with golden accents. Six ivory statues of animals are sitting atop in a circle: a chipmunk, followed by a rabbit, a deer, a fox, a wolf, and a bear. While trying to figure out if they even mean anything, you realize you didn't even look at the dial, painted in red floral models. This clock alone would be worth fortunes, so you suddenly regret you didn't bring a cart with you to this castle.
+The knight armor stands proud in front of your eyes, your torch flames dancing on its round surface like the many flames it must have seen in combat. Although you wonder if it was actually worn by a person, because it was almost double your height. You curiously notice that at, at its feet, stands a plaque where you can read: "Let's leave aside war. Lay down your weapons and armor! Dedicated for all of the fallen." 
 !opinion2
 ~gibberish!$inspiring$
 What do you think about this?
@@ -90,70 +99,28 @@ You spit on the armor after you read everything. No words bring back the fallen 
 ?armor
 You feel soulfully touched by this monument, found inside a place completely forgotten by time - but you know very well the carving of words in stone doesn't make up for the carving of flesh. The lost never come back, and we decide whether we carry their legacy or not.
 !armor2
-The grandfather clock is as elaborately crafted as everything else in the castle. It first seems that it is covered in robes, but that is only the shape of the finely carved wood with golden accents. Six ivory statues of animals are sitting atop in a circle: a chipmunk, followed by a rabbit, a deer, a fox, a wolf, and a bear. While trying to figure out if they even mean anything, you realize you didn't even look at the dial, painted in red floral models. This clock alone would be worth fortunes, so you suddenly regret you didn't bring a cart with you to this castle.
+The same tall knight armor stands proud, unaware of you being actually here.
 /
 !upstairs
-You walk the stairs you find in this room, excited about where they may go, but after all the many jumps you do on the stone-cold steps, you find a locked steel door. No key yet? Too bad, for even though you try to picklock your way in, you realize this is a kind of lock you've never met before.
+You walk the stairs you find in this room, excited about where they may go, but after all the many jumps you do on the stone-cold steps, you find a locked steel door. No key yet? Too bad.
 /
-!upstairs2
-~use the red key, with the rabbit handle$use the blue key, with the hand handle$use the green key, with the crown handle$leave the door, for now$
-You confidently walk the stairs in this room, and after its many steps, you reach the grumpy locked steel door. Fortunately, you've got your own colorful method to make it open up.
-!up_red
-You grab the red key and insert it into the door. You hesitate before starting to pull it. After every small motion segment, you hear a mechanical rumble and face more and more force against your pull. Eventually, you realize you can't pull anymore, so you take out the key, put it back in your pocket and grab the ornate handle. It is cold to the touch, but you don't hesitate anymore and immediately open the door.
-!up_green
-You grab the green key and insert it into the door. You hesitate before starting to pull it. After every small motion segment, you hear a mechanical rumble and face more and more force against your pull. Eventually, you realize you can't pull anymore, but the moment you take out the key, a strange force completely takes over your senses.
-!up_blue
-You grab the blue key and insert it into the door. You hesitate before starting to pull it. After every small motion segment, you hear a mechanical rumble and face more and more force against your pull. Eventually, you realize you can't pull anymore, but the moment you take out the key, a strange force completely takes over your senses.
-!up_bad
-Your whole body is trembling in unimaginable cold shivers. Your hands are shaking so badly, you drop the key on the ground. An explosion of high-pitched noises in your ears makes you lose all your physical balance. You eventually tumble down, and even though you hit your knees, you don't feel anything, as your whole body gets colder, to the point your muscles are numb. You can't speak, but you imagine yourself screaming to the Universe to give you more time. It doesn't, as your consciousness immediately starts fading away.
-!up_death1
-Maybe you should have listented more carefully to the Golem's instructions.
-?gameover
-
-!up_death2
-As your thoughts go over your whole life in a flash, you realize the Golem sensed your lie and gave you the wrong instructions. Maybe they weren't as naive as you thought they were. But it's too late now.
-?gameover
-
 /
 !cellar
 [1 1
-You walk the mysterious stairway, but only after you light up the torch you brought with you. You have a lot of time to wonder where it leads, being a deceptively long descend. Losing your mind in its spiral path, you soon only hear the heavy thumps of your feet on the wood, getting louder and louder; but the moment your feet land on cold stone, you become alert once again.
-You find yourself in a cellar room. How do you know that? By the chill air your torch just can't drive away and by the many wooden shelves and barrels, all open and empty. It seems to be a boring room leading up to nowhere, when suddenly, you hear a deep groan from the other side of where you currently stand, followed by the sound of stone grinding onto each other, and the rumble you'd expect to hear when a mountain breaks in half.
+You walk the mysterious stairway. You have a lot of time to wonder where it leads, being a deceptively long descend. Losing your mind in its spiral path, you soon only hear the heavy thumps of your feet on the wood, getting louder and louder; but the moment your feet land on cold stone, you become alert once again.
+You find yourself in a cellar room. How do you know that? By the chill air your torch can't drive away and by the many wooden shelves and barrels, all open and empty. It seems to be a boring room leading up to nowhere, when suddenly, you hear a deep groan from the other side of where you currently stand, followed by the sound of stone grinding onto each other, and the rumble you'd expect to hear when a mountain breaks in half.
 You get curious to look better in front of you, at the places unlit by your torch, and see what caused this whole ruckus, but that's when a voice that sounds more like a growl breaks the entire illusion of loneliness and yet safety that you had so far:
 ?{servant
 WHO WAKES ME FROM MY SLUMBER THERE? WHO... Queen, is that you? NO, IT IS NOT!
 ?{servant
 ARRGH! GO AWAY! GO AWAY, OR I'LL TURN BAD!
-*Write what you want to do.*hide barrel*throw torch|light barrel*attack|fight*sing|play guitar
+*What will you do?*hide barrel
 !promptcellar
-Whatever this thing which you can't yet see is, you'll have to either run, confront or pacify it in a smart way. Torch in hand, stolen guitar on your back, and dagger at your belt, what will you try to do?
+Whatever this thing which you can't yet see is, you'll have to either run, confront or pacify it in a smart way.
 /
-/
-/
-!servant_fight
-You decide to attack the creature. Bravely, but also foolishly - did you really think you are that strong as to win against an unknown creature in the dark? Since you have to light off your torch, you rush forward with blind eyes, but before you could even strike once with your dagger, you get picked up from the ground by a large, stone-cold hand, thrown away into a wall, and rapidly pummeled.
-Game over.
-?gameover
-
-!servant_sing
-You decide to play your guitar, in an attempt to pacify the creature, as you've heard the right melody can tame even the wildest of beasts. Sure, you've never tried it before, or even learned how to do so, but you work best under pressure! 
-*Oh boy, you real messed up!*hide barrel*throw torch|light barrel*attack|fight
-!servant_sing_prompt
-You light off your torch, take the guitar that's strapped on your back into your hands and, nervous as you were, with hands shaking and with loud steps coming towards you from the creature, you start playing a melody. You've only begun training, but that's what you also did all day while on the road here. As soon as you stroke the guitar's chords with your fine melody, the creature's steps stop. You don't stop, however, and sing as if your life depended on it - cause it totally does in this case. You grin under your scarf, impressed yourself that this idea worked - until it didn't. After a while, the creature's steps started picking up even more speed. Time to try something else - fast.
-/
-!servant1_fire
-You throw the torch, trying to hit one of the barrel, in hope it will catch fire and scare the creature. What will you do after that? You don't know for sure, but you just hope your improvisation is smart enough.
-And it seems like it is. As you threw the torch, you caught a glimpse of the creature's angry face. You thought you had the Devil themselves in front of you. But when the torch landed inside a barrel, immediately catching fire, you heard a scared scream coming from the creature. It was afraid of fire! After many attempts to stop the flames from spreading from just blowing air, the creature picked up the barrel in disperation and threw it away near you. It got smashed in the end into many small pieces of splinters, some landing on your clothes, but you didn't get hurt - even though the creature could have threw it in your face.
-!servant1_fire_stop
-You start looking for your torch on the ground to regain vision, but that's when the same voice as before start speaking again, in a pacified tone.
 /
 /
 !servant1
-You decide to unlit your torch and hide in the first barrel that you see until your next move, afraid that the sounds you made would give away your cover. As you lie in wait in pitch darkness, you remark how, with each of this angry creature's steps, the whole cellar was shaking and creaking. At first, it seems like the creature is only moving around the room while looking for you, which begged you the questions whether it can see in the dark. But you stop wondering about that once you hear it pick a barrel from the ground and violently throw it away, with a loud crash of wood getting smashed. And then another barrel. And another. Closer and closer to you.
-Without hesitation, you realize you can move away, as the creature's agitation means lack of attention. You jump out of the barrel, and move to another corner of the room that's furthest from it.
-The crash of barrels continues for a while. Some splinters even reach your feet. You start thinking what your next move could be, but that's when the creature's tantrum also stops, leaving only an akward silence in the dark cellar. 
-You don't have time to decide whether this silence is a good sign or a bad sign, because the same voice as before starts speaking again, in a pacified tone.
-!servant_sorries
 ?{servant2
 Sorry for earlier. 
 ?{servant2
@@ -166,14 +133,13 @@ I feel very bad for what I have done.
 I wish I could express all of my regrets right now.
 ?{servant2
 So I hope you can indeed excuse me.
-Definitely surprised by the sudden change of attitude, you take a moment to decide what to do. In the meanwhile, you light up your torch to gain vision again, and you see a large, uncanny abomination of rock with human features. Likely twice your height and widht, it oddly looks at you with the same face as a dog that knows they did something wrong. You keep staring, as they do.
 !svq1
-~hey, big guy, don't worry!$you're really hard to believe after making that scene$you're weird when you say sorry so much$
+~hey, big guy, don't worry!$you're really hard to believe after making that scene$stop saying sorry so much!$
 ?{servant4
 I just get very cranky when I'm woken up by somebody else, really. And it feels like ages since I was last awake... but at the same time, ages since I've last truly slept.
 !svq1_1
 You comfort the collosal pile of deformed rock and stone in front of you, making them ease up towards you.
-The smile that followed on this creature's face surprised you. Their whole face seemed to struggle to move into that kind of smiling shape, but it looked like an expression of childlike joy and innocence.
+The smile that followed on this creature's face surprised you. Their whole face seemed to struggle to move into that kind of shape, but it looked like an expression of childlike joy and innocence.
 ?{servant3
 Thank you.
 ?{servant2
@@ -187,29 +153,29 @@ You don't trust this thing in front of you enough to be kind and forgiving towar
 ?{servant4
 Well, I don't blame you. Good thing there's no mirror around here. I'd scare myself off sleep, the way I look! 
 ?{servant2
-And this kind of early hour tantrum that you've just seen? I'm cursed to be like this ever since I know myself! Even as a human.
+And this kind of early hour tantrum that you've just saw? I'm cursed to be like this ever since I know myself! Even as a human.
 !svq1_2f
 ?{servant2
-I have funny stories about it, too, but it caused more problems than anything in my entire life. Mum told me I was cursed, or something, because I really acted as if I was possessed by a rage demon. I wanted to have a job as a freelancer, as to wake up only when I want, but it was just not feasible during the kind of economy I lived in, you know? Still, I won't ever give up on my dream... that is, to become a real poet.
+I have funny stories about it, too, actually. but it caused more problems than anything in my entire life. I wanted to have a job as a freelancer, as to wake up only when I want, but it was not possible during the kind of economy I lived in, you know? Still, I won't ever give up on my dream... that is, to become a real poet.
 !svq1_3
 You make fun of this pile of deformed rock and stone in front of you for being so compliant out of the blue, unsure of how they would react - with another tantrum, or perhaps some more posture?
 ?{servant2
-Sorry - darn it. Well, that's my job as a servant, or perhaps, was my job as a servant of the Queen. To please everyone and submit. The best one at that! Because I had manners like these that you see. 
+Sorry - darn it. Well, that's my job as a servant, or perhaps, was my job as a servant of the Queen. To please everyone. The best one at that! Because I had manners like these that you see. 
 ?{servant
 What would you know about manners? Stumbling down around the castle and waking me up out of nowhere. The creaks of the door and louds steps in your wake made me have the worst nightmare!
 !svq1_3f
 ?{servant4
-I was... a big mountain, I think. And there were people... some very weird and tall people, digging inside myself to find and mine gold. Hitting all of my bones, crushing them to fine dust... terrible! terrifying! tormenting!
+I was... a big mountain, I think. And there were people... some very weird and tall people, digging inside me to find and mine gold. Hitting all of my bones, crushing them to fine dust... terrible! terrifying! tormenting!
 !svq1_r
 ?{servant2
 ...
 !svq2
 ~who are you, really?
-After your short interaction with the creature, there was only silence. The same silence that would appear between old friends who realize they actually have nothing in common anymore. You think about how to break the ice between you two right now. And that should be easy, because you have a lot of questions - starting with a very simple one.
+After your short interaction with the creature, there was only silence. The same silence that would appear between old friends who realize they actually have nothing in common anymore. You think about how to break the ice between you two right now. And that should be easy, because you have a lot of questions.
 !svq2_2
-The creature's general disposition seemed to change, now that you've started asking serious questions. Their stone muscles - if you could call them that - tensed with an audible rock rumble, and there appeared a certain human sparke in their marble eyes. At the same time, their seemingly carefree attitude vanished; their voice didn't even carry the same pitch or tone as before.
+The creature's general disposition seemed to change, now that you've started asking serious questions. Their muscles - if you could call them that - tensed with an audible rock rumble, and there appeared a certain human sparke in their marble eyes. At the same time, their seemingly carefree attitude vanished; their voice didn't even carry the same pitch or tone as before.
 ?{servant2
-Good question. You see myself in front of yourself; you see what I am, but I guess it makes no sense to you. The freaks of the world have to explain why they are the way the are and motivate their unusual existence. It's stone-crushingly tiring even for a big rock like me, but I understand it. I'll switch your question a bit - what am I? I'm what happens when a servant does their job - they become whatever is needed for others. My Queen one day just told me I had to do something - and part of that something was to transform myself into a golem. Never seen her again after I wake up from the ritual, though.
+Good question. You see myself in front of yourself; you see is what I am, but I understand how that is not enough. The freaks of the world have to explain why they are the way the are and motivate their existence. It's stone-crushingly tiring even for a big rock like me, but I understand it. I'll switch your question a bit - what am I? I'm what happens when a servant does their job - they become whatever is needed for others. My Queen one day just told me I had to do something - and part of that something was to transform myself into a golem. Never seen her again after I wake up from the ritual, though.
 ?{servant2
 But who I really am? I don't remember. I do remember that I was a human once, like you. An early-hour cranky human, sure, but a very ordinary human otherwise. I've had a beautiful childhood with my parents, trying to get along like everybody else, and eventually becoming a servant of this castle - something I was proud of, because the Queen picks up her servants herself if she thinks they're worthy to enter the Royal Family. I do remember most experiences and feelings I've had as a human, but just... not who I was. I can only think of myself as an immaterial body that walked like a shadow thorugh life, but I don't know what kind of child I was, or how I really looked.
 !svq3
@@ -221,9 +187,9 @@ I even forgot most of my dreams and desires, too, except for my desire to be a p
 ?xyzs1
 I knew this question would pop up. 
 ?{servant2
-Golems are simply human souls put inside inanimate objects. I myself was put into a big pile of rocks; into a wall of this cellar, to be precise. Now, imagine the following: you are a tree. You like being a tree; you are rooted deeply into the soil, you love to flaunt your branches in the wind, and you whisper nice things to the creatures that rest in your shadow. A lumberjack comes, cuts you down, and makes a wooden toy horse out of you. You try to flaunt your branches again, but you just can't, and you even forget what kind of tree you are. That's how it feels like being a golem. Sure, being a wooden toy horse is maybe not that bad. People smile when the wind plays with you, front to back. And you like dancing in the breeze. In many ways, you might, or should feel beter, but you just feel out of place.
+Golems are simply human souls put inside inanimate objects. Personally, I was put into a pile of rocks; into a wall of this cellar, to be precise. Now, imagine the following: you are a tree. You like being a tree; you are rooted deeply into the soil, you love to flaunt your branches in the wind, and you whisper nice things to the creatures that rest in your shadow. A lumberjack comes, cuts you down, and makes a wooden toy horse out of you. You try to flaunt your branches again, but you just can't, and you even forget what kind of tree you are. That's how it feels like being a golem. Sure, being a wooden toy horse is maybe not that bad. People smile when the wind gently makes you jump from ahead to behind. And you like dancing in that breeze. In many ways, you might, or should feel beter, but you just feel out of place.
 ?{servant2
-I'm made of rock. I can shapeshift my form, I'm virtually immortal and I'm really strong; but I just feel odd, because I can't flaunt my branches or feel my roots anymore. And when I look into the mirror, I just hate how I look like.
+I'm made of rock. I can shapeshift my form with a little bit of effort, and I'm really strong; but I just feel odd, because I can't flaunt my branches or feel my roots anymore. And when I look into the mirror, I just hate how I look like.
 !srv1
 ~*s1*how is living as a golem?$*s2*how did you get abandoned by everyone?$*s3*why don't you leave?$
 ?{servant4
@@ -233,14 +199,14 @@ And don't even get me started on the loneliness I'm experiencing right now...
 ?xyzs2
 Here's what I last remember of my Queen and the other people.
 ?{servant2
-I was cleaning the dining room, making sure everything is alright, when my Queen comes down to me with a face I just couldn't read, except for the fact that she was in a great hurry. When I try to bow towards her, she tells me to stand up and listen carefully to what she has to say.
+I was cleaning the dining room, making sure everything is alright, when my Queen comes down to me with a face I just couldn't read to anticipate what she meant. When I try to bow towards her, she tells me to stand up and listen carefully to what she has to say.
 ?{servant4
-But what did she really say? Well, I don't really remember - it's been ages that messed up with my head! Only that she told me I have to make this terrible magic ritual to transform myself into a golem, which would make my soul live on in another body for the next 1000 years. She also gave my a set of keys for the many doors of the castle, told me she'll lock herself up, that I should unlock the doors only when the time feels right, and that I should never let anyone enter the castle. 
+But what did she really say? I don't really remember, only that she told me I have to make this terrible transformation ritual to transform myself into a golem, which would make my soul live on in another body for the next 1000 years. She also gave my a set of keys for the many doors of the castle, told me she'll lock herself up, and that I should never let anyone enter the castle.
 Keys! With those keys, maybe you will be able to explore more of the castle. You suddenly become more interested, but also, feel bad for having the urge to manipulate this suffering and seemingly inoffensive golem in front of you. 
 !srv2
 ~*s1*how is living as a golem?$*s2*how did you get abandoned by everyone?$*s3*why don't you leave?$
 ?{servant2
-Why did she give me a set of keys? Why should no one enter the castle? I don't know. I can't trust my own memory, really. I don't really know what I should do, especially with you, standing in front of me right now...
+Why did she give me a set of keys? Why should no one enter the castle? I don't know. And although I still desire to be loyal to my Queen, I don't trust my own memory, really. I don't really know what I should do, especially with you, standing in front of me right now...
 !svq3_3
 ?{servant4
 ?xyzs3
@@ -248,19 +214,19 @@ The ritualic transformation bound me to this castle and it completely stops me f
 !srv3
 ~*s1*how is living as a golem?$*s2*how did you get abandoned by everyone?$*s3*why don't you leave?$
 ?{servant2
-As I said, I fused my soul with a part of this cellar wall, so I can't leave this castle. I've tried searching around the castle once, but it seems that I can't move away enough from this cellar. A certain magical force physically stops me from making the steps I want to make. I'm stuck here.
+As I said, I fused my soul with a part of this cellar wall, so I can't leave this castle. I've also tried to search around the castle once, but it seems that I can't move enough from this cellar, either. I physically cannot make the steps I want to make. I'm stuck here.
 !svqx
 ~it's unfair, what happened to you$don't you regret listening to the Queen?$you should complain less and instead pull yourself by the bootstraps$
-After saying that last phrase, the creature's face really seemed to lose that human sparkle it had.
+When saying that last phrase, the creature's face really seemed to lose that human sparkle it had.
 !svqx_1
 ?{servant2
-Well, I don't know how unfair that is. I don't think about it, at least - it doesn't help me. I keep my mind busy on other things. I'm almost running out of subjects to think about, though.
+Well, I don't know about that. I don't think about that, at least - it doesn't help me. I keep my mind busy on other things. I'm almost running out of subjects to think about, though.
 !svqx_2
 ?{servant2
-Hmm... I have mixed feelings about it, and it's possible that I remember things poorly. I don't know if she told me I had to do something and I just forgot about it. That would make me the bad one here. Besides, I remember my Queen as a figure of pure goodness and wisdom; I was a servant, but I never felt like one around her. She made me have a part in taking decisions, and we talked about all sorts of personal things. She really treated me as if I was her brother, and she was definitely not an abusive sister. Whatever her reasons were, they must have been good reasons.
+Hmm... I'd regret listening to her if at least I knew what I remember is right. I don't know if she told me I had to do something and I just forgot about it. That would make me the bad one here. But she's not bad, either, really; I was a servant, but I never felt like one. I took part in advising her and her decisions. She treated me like I was her brother. Whatever her reasons were, they must have been good reasons.
 !svqx_3
 ?{servant4
-Easy for you to say that. I am physically stuck here, unable to move far away from this cellar. I've been looking for clues around about what happened. I've even tried... reversing this transformation of being a golem. Freeing my soul, going out in peace, ending my consciousness. Dying. That didn't work. Breathing exercises, meditating - nothing helps when the Universe put you into a locked torture room with no key. And I don't complain as much as you think. I don't complain at all, since I barely talk to anyone.
+Easy for you to say that. I am physically stuck here, unable to move far away from this cellar. I've looked for clues around about what happened. I've even tried... reversing this transformation of being a golem. Freeing my soul, going out in peace, ending my consciousness. That didn't work. Breathing exercises, meditating - nothing helps when the Universe put you into a locked torture room with no key. I don't think I complain that much about it, either... that's only your impression of me.
 !svq4
 ~suggest doing something to make them feel better$
 ?{servant2
@@ -272,31 +238,31 @@ Taken only a little aback by their display of affection, you suggest them you tw
 !svq5
 ~of course, anything!$that depends on what kind of things you have on your mind!$
 ?{servant3
-Oh! I feel like a child again! Ok. Alright. You sure about it? I really have something in mind for you.
+Oh! I feel like a child again! Alright. You sure about it? I do have some things on my mind.
 !svq5a
-~sounds lovely$depends what you have in mind!$
+~sounds lovely$you can choose it yourself, if you want$
 ?{servant3
-Alright, my friend, I'll tell you, but tell me if it sounds right to you. No pressure.
+Alright, I'll give you a list, but you, my friend, pick something from it! How about that?
 !svq5a_2
 ?{servant3
 Oh no, please, I do insist you choose! You need to have some agency, too.
 !svq5a_1
-~sounds fun - tell him you're ready$sounds terrible, but you have to get the golem on your side - hide your fear$
+~let's arm wrestle, then!$how is knucklebones played?$
 ?{servant2
-So. I've always wanted to try arm wrestling after my transformation - check my strength, you know? And by looking at you, I'd guess that would be kind of your thing.
+So. I've always wanted to try arm wrestling after my transformation - check my strength, you know? Oh, how about knucklebones? That was my favourite living game!
 !wrestle
 ?{servant3
 Alright! This will be practical as much as it will be fun. I'm surprised you've accepted this idea with such a straight face; I don't know what these pounds of stone are capable of, either! Haha.
 ?{servant2
-Let's do it in small steps with some personal flavour.
-After they speak, trying not to tumble in their excitement, they immediately give you a barrel to sit on and another barrel of proper height to wrestle on it. Their happiness is almost intoxicating.
+Let's do it in small steps and with some surprise twists.
+After they speak, trying not to tumble in their excitement, they immediately give you a barrel to sit on and another barrel of proper height to wrestle on it.
 !wrestle1
 ~a bit cocky, don't you think?$thanks for being gentle!$
 ?{servant2
 First, I'll let you use both hands, and I'll only use a finger. I'm sure you got this. Ready?
 !wrestle1_1
 ?{servant5
-Hah! Maybe.
+Hah! You're right. But it's part of my curiosity.
 !wrestle1_2
 ?{servant3
 Trust me, I won't go gentle during our game.
@@ -325,7 +291,7 @@ You don't become offensive on the first second of your ready call, and surprisin
 I said I won't go gentle, but you still did! Hah. Please dive all-in next time, cause we're only getting started! Now, I'm curious to see you work with a single hand, against two of my fingers.
 !wrestle6
 ?{servant5
-Hah! Excellent. Now, I'm curious to see you work with a single hand, against two of my fingers.
+Hah! Excellent. This was interesting to experience. Now, I'm curious to see you work with a single hand, against two of my fingers.
 !wrestle_r
 They point two fingers at you with the same initial excitement, their middle and index one, while you wrap your around their fingers with the same fascination and submerged fear.
 !wrestle7
@@ -340,7 +306,7 @@ You decide to put all your force in your clench. That works in the beginning, an
 !wrestle7_2
 You mantain the necesary level of strength to hold your ground against the servant, but don't pass that edge for almost a minute. That is, until you find their grip weakens, and start putting all your force in a single pull. You surprisingly are able to bring them completely over your side.
 !wrestle7_3
-You do what you know best to do - cheat and turn any situation on your side. You know that if you steal your opponent's attention in a wrestle game, you are able to throw them over with a big enough burst of strength. You bring your free hand behind your back and suddenly stroke the chords of your strapped guitar - that creates a totally unexpected sound, which puts the rock golem off their guard and lets you win with a singular forceful pull.
+You do what you know best to do - cheat and turn any situation on your side. You know that if you steal your opponent's attention in a wrestle game, you are able to throw them over with a big enough burst of strength. You bring your free hand behind your back and suddenly stroke the chords of your guitar - that creates a totally unexpected sound, that totally puts the servant off their guard and lets you win with a singular forceful pull.
 !wrestle8
 ?{servant3
 Hah, that was a fun one! I hope you're enjoying yourself as much as I am. You're doing great. Now, just for my curiosity, I really want to try wrestling the normal way. I'll use my whole hand, as you do with yours. Ready?
@@ -350,17 +316,17 @@ You two prepare. Your hand gets completely swallowed by their rocky, dry hand. I
 !wrestle9
 When you say you're ready, you're not surprised at all that, even though you've put all your resistance from the beginning, you get thrown over your side effortlessly, like a small leaf in a storm.
 ?{servant5
-Thanks for volunteering, haha! You are strong and witty, while I'm just strong, so I'd say you're the actual winner of our game. I'm surprised you trusted me with this. I might have let too much off my guard with you, but I don't regret it.
+Thanks for volunteering, haha! You are strong and witty, while I'm just strong, so I'd say you're the actual winner of our game. I'm surprised you trusted me with this. I might have let too much off my guard with you, but I missed interactions like this.
 !wrestle9s
-~my great pleasure, big pal!$this was unusual, but you're a great friend!$
+~my great pleasure, big pal!$say you were afraid of him at first, but that's gone$
 As they speak, the visible excitement on their rocky face is impossible not to notice.
 /
 /
 !servantserious
 ?{servant2
-You're the first human I talk to since being a golem, and you were nice to me. Part of my job was also inspecting what strangers might be like, and I'm confident you're some sort of thief or blackmarket explorer, but not an evil one. I think you're looking for some special item to sell; the story of Royal Ghosts haunting looters of old castles can only work for so long. right?
+You're the first human I talk to since being a golem, and you were nice to me. Part of my job was also inspecting what strangers might be like, and I'm confident you're some sort of thief or blackmarket explorer, but not an evil one. I think you're looking for some special items to sell; the story of Royal Ghosts haunting looters of old castles can only work for so long.
 ?{servant2
-The reason I haven't completely lost hope is because I trust my Queen. Our Queen has a plan and will do something. And maybe somebody has to open the doors of the castle for that to happen, so something might change with you being here.
+The reason I haven't completely lost hope is because I trust my Queen, our Queen has a plan and will do something. And maybe somebody has to open the doors of the castle for that to happen, so something might change from you being here.
 ?{servant2
 I'll give you the keys, and you'll be free to go. Do what you will, but please tell whoever you may find about me and see what has to be done. I don't need anything else from you.
 !asktime
@@ -372,9 +338,9 @@ Actually, I'd appreciate a thing from you. Not much. Just answer to a question I
 ?{servant2
 What day and year are we in and how's life outside? I've started completely losing track of time and I don't know how much time has actually passed. I'm also curious how much of a ruined relic of the past this castle is right now.
 !answerservant1
-You tell the truth to the poor servant. They look with fascinatioan at every detail you mention of outside: how nations have moved away from castles, how all kinds of different people have come together, and how new struggles have appeared.
+You tell the truth to the poor servant. They look with fascinatioan at every detail you mention of outside: how you've moved away from castles, how all the different people have come together, and how new struggles have appeared.
 ?{servant2
-If my memory doesn't fail me that much, it's only been 250 years... I've still got a long time to go. I thought, or rather wished it would be less. I have to pick myself up and do something about it. That might have sounded sad, but really, I'm hopeful! Something might change today with your around.
+If my memory doesn't fail me that much, it's only been 150 years... I've still got a long time to go. I thought, or rather wished it would be less. I have to pick myself up and do something about it, and I hope you'll give me that oportunity now. 
 !ss1
 ?{servant5
 Thank you for answering honestly, friend. I can't wait to see what happens next.
@@ -386,7 +352,6 @@ You mean to tell me only 30 years have passed? And you still live in castles?
 ...
 !ss2
 ?{servant2
-?xyzlie
 Weird, but alright. That would probably make me a golem child, not even a teenager, hah! Sounds good. 
 !answerservant3
 You lie to the servant and tell him you're much later in time, close to the 1000 years period of time he can still be alive. Maybe that will make them more reliant on you.
@@ -395,22 +360,14 @@ That much time has passed? And you know have flying carts in the sky?
 ?{servant4
 ...
 ?{servant2
-?xyzlie
 930 years. My joints have been indeed feeling weak - I think my golem lifespan is coming to an end. It's a weird thought to have. So much time has gone by, and nothing happened. As if this place is frozen or lost in the void.
 !ss3
 ?{servant4
 This is something I have to really ponder on for a while.
 !answerservantreset
-After saying that, the golem eagerly hands you three keys on a metal ring. Like everything in this castle, they are elaborately crafted - the red key's handle portrays a rabbit, another a green hand, and yet another a blue crown.
-!keyoffer1
+After saying that, the golem eagerly hands you three keys on a metal ring. Like everything in this castle, they are elaborately crafted - one portrays a red rabbit handle, another a green hand, and yet another a blue crown.
 ?{servant2
-?xyzkeys
-Here are the keys to the castle. You have to be careful with something, though - the keys are colorcoded. To open the first floor, use the red one. You don't want to use the other colors, trust me; that's our security system. I kind of forgot what the other colors are for, but there will be clues which will help you realize that.
-!keyoffer2
-?{servant2
-?xyzkeys
-Here are the keys to the castle. You have to be careful with something, though - the keys are colorcoded. To open the first floor, use the blue one. You don't want to use the other colors, trust me; that's our security system. I kind of forgot what the other colors are for, but there will be clues which will help you realize that.
-!keyoffer_reset
+Here are the keys to the castle. You have to be careful with something, though - the keys are colorcoded. To open the first floor, use the red one. You don't want to use the other colors, trust me; that's our security system.
 ?{servant3
 I've even written a verse so I can remember the colorcode myself! Listen up:
 ?{servant4
@@ -422,7 +379,7 @@ I've even written a verse so I can remember the colorcode myself! Listen up:
 ?{servant3
 #But how about you open the door, instead of another one's skull?
 ?{servant2
-I wrote it while I was still learning. Empires aren't built in one day, so it's not my best work, but I hope it's helpful.
+I wrote it while I was still learning. Empires aren't built in one day, so it's not my proudest work, but I hope it's helpful.
 ?{servant5
 Off you go, then! I'm curious how it will all go out. Come and ask me anything if you ever need help around the castle, I know each and every corner of it!
 !servantfinal
@@ -461,4 +418,7 @@ You're inside the cold cellar filled with empty barrels. The rock servant notice
 /
 /
 /
+!upstairs2
+[1 -1
+
 %
