@@ -1,6 +1,8 @@
 # Console-ASCII-RPG
 A game demo of an old-school RPG I've written as a personal C++ coding project. [*Fully* text-based](https://en.wikipedia.org/wiki/Text-based_game) - inspired by [Zork](https://en.wikipedia.org/wiki/Zork), [Guilded Youth](https://jimmunroe.net/games/guilded-youth-a-text-game-with-ascii-animation.html), [Sanctuary RPG](https://store.steampowered.com/app/328760/SanctuaryRPG_Black_Edition/). Hardly scalable, as it started as a minor highschool project, and turned into spaghetti code fast.
 
+<img align="left" alt="Game Main Screen" src="https://github.com/917-Todasca-Daniel/917-Todasca-Daniel/blob/main/images/game_main_screen.png"/>
+
 # How to Run:
 1. Download ZIP of the repository
 2. Open '/Release/ASCIIEngine.exe' (in cmd or in explorer)
@@ -44,4 +46,6 @@ bop_dog_no
 - Smarter enemy AI
 - Encoding all text-based game resources
 - Releasing a Linux version
+
+<img align="left" alt="Game Combat Screen" src="https://github.com/917-Todasca-Daniel/917-Todasca-Daniel/blob/main/images/game_combat.png"/>
 
